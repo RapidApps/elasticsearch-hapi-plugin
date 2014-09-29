@@ -1,7 +1,7 @@
 {
   "name": "elasticsearch-hapi-plugin",
   "description": "Hapi Plugin for Elastic Search",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "license": "MIT",
   "keywords": [
     "hapi",
