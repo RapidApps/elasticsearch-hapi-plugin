@@ -16,7 +16,12 @@ lab.experiment('ElasticSearch Hapi Plugin', function () {
   });
 
   lab.test('is registered with a hapi server pack', function (next) {
-    pack.register({plugin: ElasticSearchPlugin}, function (err) {
+    pack.register({
+      plugin: ElasticSearchPlugin,
+      options: {
+        keepAlive: false
+      }
+    }, function (err) {
       Lab.expect(err).to.not.exist;
 
       plugin = pack.plugins['elasticsearch-hapi-plugin'];
