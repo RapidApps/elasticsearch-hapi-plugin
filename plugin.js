@@ -5,7 +5,7 @@ var ElasticSearch = require('elasticsearch');
 var Logger = require('elasticsearch-hapi-logger');
 
 exports.register = register;
-register.attributes = {
+exports.register.attributes = {
   name: pkg.name,
   version: pkg.version
 };
